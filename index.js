@@ -1,4 +1,6 @@
-const server = require('./server')
+const app = require('./app')
 
 
-server.listen(4000);
+app.listen(4000, '127.0.0.1', () => {
+    console.log('Server écoute sur le port 5000')
+})
