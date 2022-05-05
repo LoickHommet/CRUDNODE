@@ -1,13 +1,12 @@
-// db = {
-//     memoryDb: new Map(),
-//     id:0,
-// }
-
-// const db["memoryDb"] = new Map();
-const memoryDb = new Map();
-let id = 0;
-memoryDb.set(id++, { nom: "Alice" });
-memoryDb.set(id++, { nom: "Bob" });
-memoryDb.set(id++, { nom: "Charlie" });
-
-module.exports = memoryDb
+db = {
+    memoryDb: new Map(),
+    id:0
+  
+  }
+  
+  // populate
+  db['memoryDb'].set(db['id']++, { nom: "Alice" }) // voici comment set une nouvelle entrée.
+  db['memoryDb'].set(db['id']++, { nom: "Bob" })
+  db['memoryDb'].set(db['id']++, { nom: "Charlie" })
+  
+  module.exports = db
